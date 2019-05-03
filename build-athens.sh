@@ -1,5 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 set -e
+export PATH=$PATH:/snap/bin
 [[ ! -d athens ]] &&  git clone https://github.com/gomods/athens.git;
 [[ -d athens ]] && cd athens && git pull && cd ..;
 cd athens;
