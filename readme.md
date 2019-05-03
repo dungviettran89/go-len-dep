@@ -11,11 +11,13 @@ Go development.
 
 ## Athens 
 Use our Athens proxy by setting GOPROXY environment variable
+
 Unix / MacOS:
 ```bash
 export GOPROXY=https://athens.cuatoi.us/
 go build
 ```
+
 Windows:
 ```bat
 set GOPROXY=https://athens.cuatoi.us/
