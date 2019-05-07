@@ -3,13 +3,8 @@
   "version": "0.0.1",
   "description": "Allow you to sync local go module repo with a remote athens installation",
   "bin": {
-    "upload": "upload.js",
-    "go": "bin/go",
-    "godoc": "bin/godoc",
-    "gofmt": "bin/gofmt",
-    "go.exe": "bin/go.exe",
-    "godoc.exe": "bin/godoc.exe",
-    "gofmt.exe": "bin/gofmt.exe"
+    "uploadDependencies": "uploadDependencies.js",
+    "compile": "compile.js"
   },
   "scripts": {
     "clean": "rm -rf dist/",
