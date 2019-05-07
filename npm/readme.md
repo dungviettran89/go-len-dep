@@ -1,0 +1,1 @@
+A simple NPM wrapper for go project
