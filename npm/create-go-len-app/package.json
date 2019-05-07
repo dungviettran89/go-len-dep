@@ -1,6 +1,6 @@
 {
   "name": "@go-len/create-go-len-app",
-  "version": "0.0.20190507133754",
+  "version": "0.0.2",
   "description": "Go NPM wrapper",
   "main": "main.js",
   "bin": "./main.js",
@@ -8,7 +8,8 @@
     "clean": "rm -rf dist/",
     "compile": "build-esm",
     "test-init": "npm run clean && tasks/test-init.sh",
-    "release-dev": "npm run clean && npm run compile && tasks/release-dev.sh"
+    "release-dev": "tasks/release-dev.sh",
+    "release": "tasks/release.sh"
   },
   "repository": {
     "type": "git",

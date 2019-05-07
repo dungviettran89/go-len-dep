@@ -1,6 +1,6 @@
 {
-  "name": "go-len-tools",
-  "version": "0.0.1",
+  "name": "@go-len/go-len-tools",
+  "version": "0.0.4",
   "description": "Allow you to sync local go module repo with a remote athens installation",
   "bin": {
     "uploadDependencies": "uploadDependencies.js",
@@ -9,7 +9,8 @@
   "scripts": {
     "clean": "rm -rf dist/",
     "compile": "build-esm",
-    "release-dev": "tasks/release-dev.sh"
+    "release-dev": "tasks/release-dev.sh",
+    "release": "tasks/release.sh"
   },
   "repository": {
     "type": "git",

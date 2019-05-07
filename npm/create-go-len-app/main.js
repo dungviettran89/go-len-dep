@@ -13,7 +13,6 @@ export const init = () => {
     console.log('Generating new project.');
     copyFile('go.mod');
     copyFile('package.json');
-    copyFile('package-lock.json');
     copyFile('main.go');
     console.log('Please run npm install to download required dependencies.');
     console.log('The following tasks is supported');
