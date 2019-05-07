@@ -1,0 +1,33 @@
+{
+  "name": "go-len-dep-sync",
+  "version": "0.0.1",
+  "description": "Allow you to sync local go module repo with a remote athens installation",
+  "bin": {
+    "upload": "upload.js"
+  },
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "compile": "build-esm",
+    "release-dev": "tasks/release-dev.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dungviettran89/go-len-dep.git"
+  },
+  "keywords": [
+    "Go"
+  ],
+  "author": "Dungviettran89",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dungviettran89/go-len-dep/issues"
+  },
+  "homepage": "https://github.com/dungviettran89/go-len-dep#readme",
+  "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-syntax-import-meta": "^7.2.0",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "build-esm": "^4.2.1"
+  }
+}
