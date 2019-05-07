@@ -1,0 +1,15 @@
+{
+  "name": "verdaccio-deployment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "verdaccio": "verdaccio --config ./config.yml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "verdaccio": "^3.11.6"
+  }
+}

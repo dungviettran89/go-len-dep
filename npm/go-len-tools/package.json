@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "rm -rf dist/",
     "compile": "build-esm",
-    "release-dev": "tasks/release-dev.sh",
+    "local-release": "tasks/local-release.sh",
     "release": "tasks/release.sh"
   },
   "repository": {
