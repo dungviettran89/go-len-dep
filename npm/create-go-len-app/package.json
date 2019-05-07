@@ -1,5 +1,5 @@
 {
-  "name": "@go-len/create-go-len-app",
+  "name": "create-go-len-app",
   "version": "0.0.2",
   "description": "Go NPM wrapper",
   "main": "main.js",
