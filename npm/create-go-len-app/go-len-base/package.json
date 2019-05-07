@@ -1,0 +1,17 @@
+{
+  "name": "go-len-base",
+  "version": "1.0.0",
+  "description": "A Go Len powered service",
+  "main": "index.js",
+  "scripts": {
+    "go-build": "cross-env GORPROXY=https://athens.cuatoi.us && go build"
+  },
+  "keywords": [
+    "Go"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
+}
