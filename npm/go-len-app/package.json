@@ -1,0 +1,20 @@
+{
+  "name": "@go-len/go-len-app",
+  "version": "0.0.2",
+  "description": "Go NPM wrapper",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dungviettran89/go-len-dep.git"
+  },
+  "keywords": [
+    "Go"
+  ],
+  "author": "Dungviettran89",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dungviettran89/go-len-dep/issues"
+  },
+  "homepage": "https://github.com/dungviettran89/go-len-dep#readme"
+}
