@@ -1,7 +1,17 @@
 storage: ./storage
 max_body_size: 1000mb
+auth:
+  htpasswd:
+    file: ./storage/passwd
+uplinks:
+  npmjs:
+    url: https://registry.npmjs.org/
 packages:
-  '@go-len/*':
-    access: $anonymous
-    publish: $anonymous
+  '@*/*':
+    access: $authenticated
+    publish: $authenticated
+    proxy: npmjs
+  '**':
+    access: $authenticated
+    publish: $authenticated
     proxy: npmjs
