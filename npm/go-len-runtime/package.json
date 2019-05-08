@@ -1,12 +1,16 @@
 {
   "name": "@go-len/go-len-runtime",
-  "version": "1.12.5",
+  "version": "1.12.1",
   "description": "Embedded Go runtime",
   "scripts": {
     "clean": "del-cli dist",
-    "release-local-windows": "tasks/release-local.sh windows 1.12.5",
-    "release-local-linux": "tasks/release-local.sh linux 1.12.5",
-    "release-local-macos": "tasks/release-local.sh macos 1.12.5"
+    "release-local-windows": "tasks/release-local.sh windows 1.12.1",
+    "release-local-linux": "tasks/release-local.sh linux 1.12.1",
+    "release-local-macos": "tasks/release-local.sh macos 1.12.1",
+    "release-windows": "tasks/release.sh windows 1.12.1",
+    "release-linux": "tasks/release.sh linux 1.12.1",
+    "release-macos": "tasks/release.sh macos 1.12.1"
+
   },
   "repository": {
     "type": "git",
