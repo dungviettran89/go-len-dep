@@ -28,4 +28,4 @@ if [ "$OS" = "macos" ]; then
 fi
 sed -i -e "s/go-len-runtime/go-len-runtime-$OS/g" package.json
 npm version $VERSION
-npm publish --public=true
+npm publish --access=public --tag=latest
