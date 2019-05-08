@@ -1,0 +1,23 @@
+{
+  "name": "@go-len/go-len-runtime",
+  "version": "0.0.1",
+  "description": "Embedded Go runtime",
+  "bin": {
+    "go": "go/bin/go",
+    "godoc": "go/bin/godoc",
+    "gofmt": "go/bin/gofmt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dungviettran89/go-len-dep.git"
+  },
+  "keywords": [
+    "Go"
+  ],
+  "author": "Dungviettran89",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dungviettran89/go-len-dep/issues"
+  },
+  "homepage": "https://github.com/dungviettran89/go-len-dep#readme"
+}

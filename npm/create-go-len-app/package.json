@@ -5,7 +5,7 @@
   "main": "main.js",
   "bin": "./main.js",
   "scripts": {
-    "clean": "rm -rf dist/",
+    "clean": "del-cli dist",
     "compile": "build-esm",
     "local-init": "tasks/local-init.sh",
     "local-release": "tasks/local-release.sh",
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/dungviettran89/go-len-dep#readme",
   "dependencies": {
+    "@go-len/create-go-len-app-local": "^0.1.20190508181925",
     "process": "^0.11.10"
   },
   "types": "module",
@@ -33,6 +34,7 @@
     "@babel/plugin-syntax-import-meta": "^7.2.0",
     "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
-    "build-esm": "^4.2.1"
+    "build-esm": "^4.2.1",
+    "del-cli": "^1.1.0"
   }
 }

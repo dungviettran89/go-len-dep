@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@go-len/go-len-tools": "^0.0.1",
+    "@go-len/go-len-tools": "0.0.x",
+    "@go-len/go-len-runtime-linux": "1.12.x",
     "cross-env": "^5.2.0"
   }
 }
