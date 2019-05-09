@@ -16,3 +16,4 @@ local.sh
 hello
 node_modules/
 dist/
+cache/
