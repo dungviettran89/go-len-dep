@@ -10,5 +10,4 @@ $NPM i --no-save -f @go-len/create-go-len-app-local
 $NPM init @go-len/go-len-app-local
 $NPM i -D @go-len/go-len-runtime-linux
 $NPM i
-$NPM run go-build
-./go-len-base
+$NPM run go-run

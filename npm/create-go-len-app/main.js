@@ -14,9 +14,11 @@ export const init = () => {
     copyFile('go.mod');
     copyFile('package.json');
     copyFile('main.go');
+    copyFile('.env');
     console.log('Please run npm install to download required dependencies.');
     console.log('The following tasks is supported');
     console.log('- npm run go-build: build go project');
+    console.log('- npm run go-run: run main');
 };
 
 init();
