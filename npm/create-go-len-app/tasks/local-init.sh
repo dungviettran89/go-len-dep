@@ -10,5 +10,4 @@ $NPM i --no-save -f @go-len/create-go-len-app-local
 $NPM init @go-len/go-len-app-local
 #$NPM i -D @go-len/go-len-runtime-macos
 $NPM i
-
 $NPM run go-run

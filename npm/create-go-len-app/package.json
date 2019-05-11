@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "del-cli dist build",
     "compile": "build-esm",
+    "test": "tasks/test.sh",
     "local-init": "tasks/local-init.sh",
     "local-release": "tasks/local-release.sh",
     "release": "tasks/release.sh"
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/dungviettran89/go-len-dep#readme",
   "dependencies": {
+    "minimist": "^1.2.0",
     "process": "^0.11.10"
   },
   "types": "module",
@@ -35,7 +37,6 @@
   },
   "babel": {},
   "files": [
-    "go-len-base",
     "src"
   ]
 }

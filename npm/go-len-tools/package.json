@@ -3,11 +3,10 @@
   "version": "0.0.4",
   "description": "Allow you to sync local go module repo with a remote athens installation",
   "bin": {
-    "uploadDependencies": "uploadDependencies.js",
-    "compile": "compile.js"
+    "compile": "src/compile.js"
   },
   "scripts": {
-    "clean": "rm -rf dist/",
+    "clean": "del-cli build dist",
     "compile": "build-esm",
     "local-release": "tasks/local-release.sh",
     "release": "tasks/release.sh"
@@ -25,11 +24,15 @@
     "url": "https://github.com/dungviettran89/go-len-dep/issues"
   },
   "homepage": "https://github.com/dungviettran89/go-len-dep#readme",
+  "types": "module",
   "devDependencies": {
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/plugin-syntax-import-meta": "^7.2.0",
     "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
-    "build-esm": "^4.2.1"
-  }
+    "build-esm": "^4.2.1",
+    "del-cli": "^1.1.0"
+  },
+  "babel": {},
+  "files": [
+    "src"
+  ]
 }
