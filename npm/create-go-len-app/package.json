@@ -2,10 +2,9 @@
   "name": "@go-len/create-go-len-app",
   "version": "0.0.4",
   "description": "Go NPM wrapper",
-  "main": "main.js",
-  "bin": "./main.js",
+  "bin": "./src/main.js",
   "scripts": {
-    "clean": "del-cli dist",
+    "clean": "del-cli dist build",
     "compile": "build-esm",
     "local-init": "tasks/local-init.sh",
     "local-release": "tasks/local-release.sh",
@@ -29,11 +28,14 @@
   },
   "types": "module",
   "devDependencies": {
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/plugin-syntax-import-meta": "^7.2.0",
     "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "build-esm": "^4.2.1",
     "del-cli": "^1.1.0"
-  }
+  },
+  "babel": {},
+  "files": [
+    "go-len-base",
+    "src"
+  ]
 }

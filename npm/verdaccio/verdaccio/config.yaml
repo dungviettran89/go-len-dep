@@ -1,0 +1,17 @@
+storage: ./storage
+max_body_size: 1000mb
+auth:
+  htpasswd:
+    file: ./storage/passwd
+uplinks:
+  npmjs:
+    url: https://registry.npmjs.org/
+packages:
+  '@*/*':
+    access: $all
+    publish: $all
+    proxy: npmjs
+  '**':
+    access: $all
+    publish: $all
+    proxy: npmjs

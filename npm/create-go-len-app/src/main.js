@@ -3,13 +3,14 @@ import process from 'process';
 import fs from 'fs';
 
 const copyFile = (name) => {
-    let source = `${__dirname}/go-len-base/${name}`;
+    console.log(__dirname);
+    let source = `${__dirname}/../go-len-base/${name}`;
     let target = `${process.cwd()}/${name}`;
     fs.copyFile(source, target, () => console.log(`Generated ${target}`));
 
 };
 
-export const init = () => {
+(async () => {
     console.log('Generating new project.');
     copyFile('go.mod');
     copyFile('package.json');
@@ -19,6 +20,4 @@ export const init = () => {
     console.log('The following tasks is supported');
     console.log('- npm run go-build: build go project');
     console.log('- npm run go-run: run main');
-};
-
-init();
+})();

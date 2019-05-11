@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "verdaccio": "verdaccio --config ./config.yml"
+    "verdaccio": "HOME=./ verdaccio"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "verdaccio": "^3.11.6"
-  }
+  },
+  "dependencies": {}
 }
