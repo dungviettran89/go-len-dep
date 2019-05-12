@@ -6,4 +6,4 @@ npm run compile
 DIST=$(pwd)/dist
 mkdir -p build/test-app
 cd build/test-app
-node ${DIST}/src/main.js
+node ${DIST}/src/main.js --name go-len-test-app
