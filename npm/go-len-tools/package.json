@@ -3,11 +3,12 @@
   "version": "0.0.4",
   "description": "Allow you to sync local go module repo with a remote athens installation",
   "bin": {
-    "compile": "src/compile.js"
+    "golen": "src/main.js"
   },
   "scripts": {
     "clean": "del-cli build dist",
     "compile": "build-esm",
+    "test": "tasks/test.sh",
     "local-release": "tasks/local-release.sh",
     "release": "tasks/release.sh"
   },
@@ -34,5 +35,9 @@
   "babel": {},
   "files": [
     "src"
-  ]
+  ],
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-http-proxy": "^1.5.1"
+  }
 }
