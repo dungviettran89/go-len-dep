@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 npm run clean
 npm run compile
-GOLEN="node $(pwd)/dist/src/main.js"
+GOLEN="$(pwd)/dist/src/main.js"
+chmod +x $GOLEN
 cd ../create-go-len-app/dist/src/template
-$GOLEN
+$GOLEN run main.go

@@ -4,9 +4,9 @@
   "description": "A Go Len powered service",
   "main": "index.js",
   "scripts": {
-    "go-build": "cross-env GORPROXY=https://athens.cuatoi.us go build",
-    "go-run": "cross-env GORPROXY=https://athens.cuatoi.us go run main.go",
-    "go-list": "cross-env GORPROXY=https://athens.cuatoi.us go list -m all"
+    "build": "golen build",
+    "start": "golen run main.go",
+    "list": "golen list -m all"
   },
   "keywords": [
     "Go"
@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@go-len/go-len-tools": "0.0.x",
+    "@go-len/go-len-tools": "^0.0.4",
     "cross-env": "^5.2.0"
   },
   "dependencies": {}

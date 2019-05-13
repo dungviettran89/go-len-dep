@@ -1,6 +1,6 @@
 {
   "name": "@go-len/go-len-tools",
-  "version": "0.0.4",
+  "version": "0.0.7-0",
   "description": "Allow you to sync local go module repo with a remote athens installation",
   "bin": {
     "golen": "src/main.js"
@@ -37,6 +37,7 @@
     "src"
   ],
   "dependencies": {
+    "cross-spawn": "^6.0.5",
     "express": "^4.16.4",
     "express-http-proxy": "^1.5.1"
   }

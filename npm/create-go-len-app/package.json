@@ -1,6 +1,6 @@
 {
   "name": "@go-len/create-go-len-app",
-  "version": "0.0.5",
+  "version": "0.0.10-0",
   "description": "Go NPM wrapper",
   "bin": "./src/main.js",
   "scripts": {
@@ -26,9 +26,10 @@
   "homepage": "https://github.com/dungviettran89/go-len-dep#readme",
   "dependencies": {
     "cpx": "^1.5.0",
-    "minimist": "^1.2.0",
+    "cross-spawn": "^6.0.5",
     "process": "^0.11.10",
-    "replace-in-file": "^4.0.0"
+    "replace-in-file": "^4.0.0",
+    "yargs": "^13.2.4"
   },
   "types": "module",
   "devDependencies": {

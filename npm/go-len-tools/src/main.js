@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import {exec} from 'child_process';
 
 (async () => {
-    exec("go build", {'GOPROXY': "https://athens.cuatoi.us"}, (error, stdout, stderr) => {
-        console.log(error);
-        console.log(stdout);
-        console.log(stderr);
-    })
+    let process = require('process');
+    let env = {...process.env, GOPROXY: "https://athens.cuatoi.us"};
+    let stdio = 'inherit';
+    let goArgs = process.argv.splice(2);
+    let go = require('cross-spawn')('go', goArgs, {env, stdio: stdio});
+    await new Promise((resolve => go.on('exit', resolve).on('error', resolve)));
 })();
