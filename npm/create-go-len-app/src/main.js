@@ -1,15 +1,16 @@
 #!/usr/bin/env node
 
-import {args} from "./args";
 import {spawn} from "./spawn";
+import {extractArgs} from "./args";
+import path from "path";
+import {copy} from "cpx";
+import prompts from "prompts";
 
 (async () => {
-    const path = require('path');
     const source = path.resolve(__dirname, "template", "**");
-    const target = require('process').cwd();
-    const name = args['name'] || path.basename(target);
+    const {name, target} = await extractArgs();
 
-    await new Promise((resolve) => require('cpx').copy(`${source}`, target, resolve));
+    await new Promise((resolve) => copy(`${source}`, target, resolve));
     await require('replace-in-file')({
         files: [path.resolve(target, "**")],
         from: /go_template/g,
@@ -18,9 +19,17 @@ import {spawn} from "./spawn";
     console.log(`Generating go-len application`);
     console.log(`- name:    ${name}`);
     console.log(`- folder:  ${target}`);
-    console.log(`Running npm install...`);
-    await spawn('npm', ['install', '@go-len/go-len-tools@latest', '--save']);
-    await spawn('npm', ['install']);
+    let {npmInstall} = await prompts({
+        type: 'confirm',
+        name: 'npmInstall',
+        message: `Do you want to run npm install?`,
+        initial: true
+    });
+    if (npmInstall) {
+        console.log(`Running npm install...`);
+        await spawn('npm', ['install', '@go-len/go-len-tools@latest', '--save']);
+        await spawn('npm', ['install']);
+    }
     console.log(`Completed. To start development:`);
     console.log(`- npm run build: Build your package`);
     console.log(`- npm run start: Run your main.go`);
